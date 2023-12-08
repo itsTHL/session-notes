@@ -45,3 +45,32 @@ if (boolValue) {
 number > 2 ? number++ : number--;
 
 console.log("After IF -> number: ", number);
+
+const animal = "Panda";
+let emoji;
+
+// if (animal === 'Panda') {
+//   emoji = '🐼';
+// }else {
+//   if (animal === 'Tiger') {
+//     else {
+//       emoji = '🤔'
+//     }
+//   }
+//   }
+
+switch (animal) {
+  case "Panda":
+    emoji = "🐼";
+    break;
+  case "Tiger":
+    emoji = "🐯";
+    break;
+  case "Dog":
+    emoji = "🐶";
+    break;
+  default:
+    emoji = "❓";
+}
+
+console.log("What animal is this? ", animal);
